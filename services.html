@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETA GRAPHICS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="BG.jpg">
+    <style>
+        body{
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            background-image: url(PICTURES/p4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: aliceblue;
+
+        }
+        li{
+            list-style:none ;
+        }
+        .slider{
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .slides{
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .slide img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .slide{
+            display: none;
+        }
+        .prev{
+            left: 10px;
+        }
+        .next{
+            right: 10px;
+        }
+        .prev, .next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color:black ;
+            color:white ;
+            border:none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>GRAPHICS DESIGN SERVICES</h1>
+    <P>Welcome to our my graphics design portifolio! I specialize in creating stunning visuals that
+        help your brand to stand out. Whether you need logos, social media graphics, or marketing material
+        like ads, I've got you covered.
+    </P>
+    </header>
+    <h2>OUR SERVICES</h2>
+    <div class="logo">
+        <h3>Logo and Brand Identity Design</h3>
+        <div class="slider">
+            <div class="slide">
+                <img src="Slide/I1.jpg" class="slide"  alt="I1">
+                <img src="Slide/I2.jpg" class="slide" alt="I2">
+                <img src="Slide/I3.jpg" class="slide" alt="I3">
+                <img src="Slide/I4.jpg" class="slide" alt="I4">
+                <img src="Slide/I5.jpg" class="slide" alt="I5">
+                <img src="Slide/I6.jpg" class="slide"  alt="I6">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
+        </div>
+        <ul>
+            <li>Custom logo creation</li>
+            <li>Brand style guides</li>
+            <li>Business cards and stationery design</li>
+        </ul>
+    </div>
+    <div class="media">
+        <h3>Social Media Graphics</h3>
+        <ul>
+            <li>Instagram post and stories</li>
+            <li>Facebook and Twitter banners</li>
+            <li>Pinterest and LinkedIn visuals</li>
+        </ul>
+    </div>
+    <div class="market">
+        <h3>Print and Marketing Materials</h3>
+        <ul>
+            <li>Flyers and brochures</li>
+            <li>Posters and Banners</li>
+            <li>Product packaging</li>
+        </ul>
+    </div>
+    <div class="UI">
+        <h3>UI/UX Design</h3>
+        <ul>
+            <li>Website mock-ups</li>
+            <li>App interface design</li>
+            <li>Icon sets</li>
+        </ul>
+    </div>
+    <a href="work.html" style="background-color: aliceblue;">Some of our services</a>
+    <div class="why-choose">
+        <h2>WHY CHOOSE US</h2>
+        <p><strong>Creative Unique Design</strong>-Tailored to your brand's personality.</p>
+        <p><strong>Fast Turnaround</strong>-Efficient without compromising quality.</p>
+        <p><strong>Affordable Pricing</strong>Proffesional work within your budget.</p>
+        <p><strong>Client Focused</strong>Collaborative process with revisions until you are satisified.</p>
+    </div>
+    <section>
+        <h2>How It Works</h2>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step1">
+                    <h3>Consultation</h3>
+                    <p>Tell me about your project.</p>
+                </div>
+            <div class="step">
+                <div class="step2"> 
+                    <h3>Concept and Draft</h3>
+                    <p>I'll create initial designs.</p>
+                </div>
+            </div>    
+            </div>
+            <div class="step">
+                <div class="step3"> 
+                    <h3>Feedback and revision</h3>
+                    <p>We'll refine until its perfect.</p>
+                </div>
+            </div>    
+            </div>
+            <div class="step">
+                <div class="step4"> 
+                    <h3>Final Delivery</h3>
+                    <p>Get high quality files ready to use!.</p>
+                </div>
+            </div>    
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contacts.html">CONTACTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+    <footer>&copy; BETA GRAPHICS All Rights Reserved.</footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
